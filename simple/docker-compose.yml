@@ -6,9 +6,9 @@ services:
         - db.env
     environment:
         - BUILDBOT_CONFIG_DIR=config
-        - BUILDBOT_CONFIG_URL=https://github.com/buildbot/buildbot-docker-example-config/archive/master.tar.gz
+        - BUILDBOT_CONFIG_URL=https://github.com/chigraph/buildbot/archive/master.tar.gz
         - BUILDBOT_WORKER_PORT=9989
-        - BUILDBOT_WEB_URL=http://ec2-18-216-188-17.us-east-2.compute.amazonaws.com:8080
+        - BUILDBOT_WEB_URL=http://ec2-18-216-188-17.us-east-2.compute.amazonaws.com:8080/
         - BUILDBOT_WEB_PORT=8080
     links:
       - db
