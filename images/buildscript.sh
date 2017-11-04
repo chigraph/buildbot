@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -xe
 
 git clone https://github.com/chigraph/chigraph -b "$CHI_REVISION" --depth=1
 cd chigraph
