@@ -13,4 +13,4 @@ WORKDIR /root
 ENV CHI_COMPILER=g++-5
 ENV CHI_LLVM_CONFIG=/usr/lib/llvm-5/bin/llvm-config
 
-CMD ["bash", "-c" "wget https://raw.githubusercontent.com/chigraph/buildbot/master/images/buidscript.sh && bash buildscript.sh"]
+CMD ["bash", "-c", "wget https://raw.githubusercontent.com/chigraph/buildbot/master/images/buidscript.sh && /usr/bin/bash buildscript.sh"]
