@@ -11,6 +11,6 @@ RUN apt-get update && apt-get install -yy clang-5.0 llvm-5.0-dev \
 WORKDIR /root
 
 ENV CHI_COMPILER=g++-5
-ENV CHI_LLVM_CONFIG=/usr/lib/llvm-5/bin/llvm-config
+ENV CHI_LLVM_CONFIG=/usr/lib/llvm-5.0/bin/llvm-config
 
 CMD ["bash", "-c", "wget https://raw.githubusercontent.com/chigraph/buildbot/master/images/buildscript.sh && /bin/bash buildscript.sh"]
