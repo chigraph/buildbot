@@ -6,7 +6,7 @@ RUN apt-add-repository 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
 
 RUN apt-get update && apt-get install -yy clang-5.0 llvm-5.0-dev \
-	g++-5 cmake git ninja-build
+	g++-5 cmake git ninja-build libboost-all-dev libgit2-dev
 
 WORKDIR /root
 
