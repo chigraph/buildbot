@@ -21,7 +21,7 @@ services:
         - 5432
 
   worker:
-    image: "russelltg/buildbot-worker-docker:latest"
+    image: "russelltg/chigraph-buildbot-worker:latest"
     environment:
         BUILDMASTER: buildbot
         BUILDMASTER_PORT: 9989
