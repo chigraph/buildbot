@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -yy \
     clang-5.0 llvm-5.0-dev \
     clang-6.0 llvm-6.0-dev \
     g++-5 g++-6 g++-7 \
-    cmake git ninja-build libgit2-dev
+    cmake git ninja-build libedit-dev
 
 
 USER buildbot
