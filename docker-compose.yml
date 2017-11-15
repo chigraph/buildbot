@@ -5,6 +5,7 @@ services:
     environment:
         - BUILDBOT_CONFIG_DIR=config
         - BUILDBOT_CONFIG_URL=https://github.com/chigraph/buildbot/archive/master.tar.gz
+        - BUILDBOT_WORKER_PASSWORD
     ports:
       - "8080:8080"
       - "9989:9989"
